@@ -18,7 +18,7 @@ const Banner = () => {
       <Swiper className="swiper_container" navigation={{ enabled: true }} spaceBetween={0} loop autoplay={{ delay: 3000, disableOnInteraction: false }}>
         {slideArray.map((slide, index) => (
           <SwiperSlide key={`${keyExtractor}-${index}`}>
-            <Image src={slide} alt={`slide-${index}`} />
+            <Image src={slide} alt={`slide-${index}`} className="swiper_image" />
           </SwiperSlide>
         ))}
       </Swiper>

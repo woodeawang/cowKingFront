@@ -32,6 +32,10 @@ body {
   height: 100px;
   padding: 10px;
 }
+.site_logo img {
+  width: 100%;
+  height: 100%;
+}
 .gnb {
   height: 100%;
   display: flex;
@@ -47,9 +51,6 @@ body {
   position: relative;
   margin-top: 100px;
 }
-.swiper_container {
-  height: calc(100vh - 50%);
-}
 .swiper_round_bottom {
   width: 100%;
   height: 40px;
@@ -59,9 +60,14 @@ body {
   border-radius: 40px 40px 0 0;
   z-index: 1;
 }
+.swiper_image {
+  width: 100%;
+  max-height: 50%;
+  height: 50%;
+}
 
-/* @media (max-width: 1000px) {
-  .swiper_container {
-    height: 500px;
+@media (max-width: 1280px) {
+  .swiper_image {
+    max-height: 50%;
   }
-} */
+}
