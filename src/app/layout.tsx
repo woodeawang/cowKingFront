@@ -1,8 +1,9 @@
+import "@/styles/reset.css";
+import "@/styles/global.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "../layouts/Header";
-import "./globals.css";
 import "swiper/css/bundle";
+import Header from "@/layouts/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <div className="relative mx-auto ">
-          <Header />
-          {children}
-        </div>
+        <Header />
+        {children}
       </body>
     </html>
   );
