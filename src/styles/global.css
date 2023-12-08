@@ -43,6 +43,25 @@ body {
 }
 
 /* swiper */
-.swiper_container {
+.swiper_wrap {
+  position: relative;
   margin-top: 100px;
 }
+.swiper_container {
+  height: calc(100vh - 50%);
+}
+.swiper_round_bottom {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  border-radius: 40px 40px 0 0;
+  z-index: 1;
+}
+
+/* @media (max-width: 1000px) {
+  .swiper_container {
+    height: 500px;
+  }
+} */
