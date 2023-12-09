@@ -7,12 +7,14 @@ const Header = () => {
     <header id="header">
       <div className="header_wrap center">
         <div className="site_logo">
-          <Image src={LOGO} alt="logo" />
+          <Link href="/">
+            <Image src={LOGO} alt="logo" />
+          </Link>
         </div>
         <nav id="gnb">
           <ul className="gnb">
             <li className="gnb_item">
-              <Link href="/sub/brand.jsp">브랜드 소개</Link>
+              <Link href="/brand">브랜드 소개</Link>
             </li>
             <li className="gnb_item">
               <Link href="/sub/menu.jsp#tab1">메뉴 소개</Link>

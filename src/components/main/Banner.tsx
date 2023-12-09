@@ -17,9 +17,11 @@ const Banner = () => {
     <div className="swiper_wrap">
       <Swiper className="swiper_container" navigation={{ enabled: true }} spaceBetween={0} loop /* autoplay={{ delay: 3000, disableOnInteraction: false }}*/>
         {slideArray.map((slide, index) => (
-          <SwiperSlide className={`slide_item`} key={`${keyExtractor}-${index}`}>
-            <div className="black">강아지</div>
-            <Image src={slide} alt={`slide-${index}`} layout="fill" objectFit="cover" objectPosition="center" />
+          <SwiperSlide key={`${keyExtractor}-${index}`}>
+            <div className={`slide_item`}>
+              <Image src={slide} alt={`slide-${index}`} layout="fill" objectFit="cover" objectPosition="center" />
+              <div className="black">강아지</div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
