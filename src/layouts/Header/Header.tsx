@@ -17,7 +17,7 @@ const Header = () => {
               <Link href="/brand">브랜드 소개</Link>
             </li>
             <li className="gnb_item">
-              <Link href="/sub/menu.jsp#tab1">메뉴 소개</Link>
+              <Link href="/menu">메뉴 소개</Link>
             </li>
             <li className="gnb_item">
               <Link href="/sub/location.jsp">매장 안내</Link>
