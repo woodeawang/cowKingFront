@@ -15,7 +15,7 @@ const Banner = () => {
 
   return (
     <div className="swiper_wrap">
-      <Swiper className="swiper_container" navigation={{ enabled: true }} spaceBetween={0} loop /* autoplay={{ delay: 3000, disableOnInteraction: false }}*/>
+      <Swiper className="swiper_container" navigation={{ enabled: true }} spaceBetween={0} loop autoplay={{ delay: 5000, disableOnInteraction: false }}>
         {slideArray.map((slide, index) => (
           <SwiperSlide key={`${keyExtractor}-${index}`}>
             <div className={`slide_item`}>

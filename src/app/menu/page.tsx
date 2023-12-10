@@ -1,8 +1,5 @@
 import Image from "next/image";
 import Slide1 from "@/assets/slide1.jpg";
-import Slide2 from "@/assets/slide2.jpg";
-import Chef from "@/assets/chef.png";
-import SubSlide from "@/components/brand/SubSlide";
 import ColumnTab from "@/components/menu/ColumnTab";
 
 const Menu = () => {
