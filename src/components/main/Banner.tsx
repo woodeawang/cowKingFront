@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Banner = () => {
   const keyExtractor = useId();
-  const slideArray = [Slide1, Slide2, Slide3, Slide4];
+  const slideArray = [Slide4, Slide1, Slide2, Slide3];
   SwiperCore.use([Navigation, Scrollbar, Autoplay]);
 
   return (

@@ -23,7 +23,7 @@ const Header = () => {
               <Link href="/map">매장 안내</Link>
             </li>
             <li className="gnb_item">
-              <Link href="/">가맹 문의</Link>
+              <Link href="/create">가맹 문의</Link>
             </li>
           </ul>
         </nav>
