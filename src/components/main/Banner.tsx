@@ -6,16 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slide1 from "@/assets/slide1.jpg";
 import Slide2 from "@/assets/slide2.jpg";
 import Slide3 from "@/assets/slide3.jpg";
+import Slide4 from "@/assets/slide4.jpg";
 import Image from "next/image";
 
 const Banner = () => {
   const keyExtractor = useId();
-  const slideArray = [Slide1, Slide2, Slide3];
+  const slideArray = [Slide1, Slide2, Slide3, Slide4];
   SwiperCore.use([Navigation, Scrollbar, Autoplay]);
 
   return (
     <div className="swiper_wrap">
-      <Swiper className="swiper_container" navigation={{ enabled: true }} spaceBetween={0} loop autoplay={{ delay: 5000, disableOnInteraction: false }}>
+      <Swiper className="swiper_container" navigation={{ prevEl: null, nextEl: null }} spaceBetween={0} loop autoplay={{ delay: 5000, disableOnInteraction: false }}>
         {slideArray.map((slide, index) => (
           <SwiperSlide key={`${keyExtractor}-${index}`}>
             <div className={`slide_item`}>

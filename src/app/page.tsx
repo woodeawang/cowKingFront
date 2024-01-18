@@ -1,28 +1,26 @@
 import Banner from "@/components/main/Banner";
 import Image from "next/image";
-import Shop from "@/assets/shop.jpg";
+import SearchIcon from "../assets/search_Ic.svg";
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <div className="new_shop_wrap center">
-        <div className="new_shop_container">
-          <div className="new_shop_left">
-            <Image src={Shop} alt="new_shop" />
+      <div className="main_searchWrap center">
+        <div className="main_searchContainer" style={{ display: "flex", flexDirection: "column" }}>
+          <p className="blackBox">매장 찾기</p>
+
+          <div className="search_top center">
+            <Image src={SearchIcon} alt={`돋보기`} />
+            <p className="search_tit">가까운 우대왕을 찾아보세요!</p>
           </div>
-          <div className="new_shop_right">
-            <div className="new_shop_right_inner">
-              <h2 className="new_shop_name">강남점</h2>
-              <p className="new_shop_desc">
-                우대왕 3호점 ‘강남점’이{" "}
-                <span>
-                  <br />
-                </span>
-                2월 10일 개점합니다!
-              </p>
-            </div>
+
+          <div className="search_input">
+            <input type="text" />
+            <Image src={SearchIcon} alt={`인풋 돋보기`} width={15} height={15} />
           </div>
+
+          <button>검색하기</button>
         </div>
       </div>
     </main>
