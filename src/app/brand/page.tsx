@@ -16,7 +16,7 @@ const Brand = () => {
         <Image src={Slide2} alt="brand_image" />
         <div className="brand_intro_desc">
           <p className="brand_intro_title">
-            대한민국 "국가대표" 맛<br />
+            대한민국 국가대표 맛<br />
             정직한 가격으로
             <br />
             승부하는 우대왕
